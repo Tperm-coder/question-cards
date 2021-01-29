@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz cards</title>
+    <link rel="stylesheet" href="addQuestion.css" />
+    <script src="addQuestion.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">
+        <div class="gap"></div>
+        <div>Question: <input id="question" /></div>
+      </div>
+      <div class="choice">
+        choice 1 : <input id="choice1" class="choicesInput" />
+      </div>
+      <div class="choice">
+        choice 2 : <input id="choice2" class="choicesInput" />
+      </div>
+      <div class="choice">
+        choice 3 : <input id="choice3" class="choicesInput" />
+      </div>
+      <div class="choice">
+        correct answer : <input id="correctAnswer" class="choicesInput" />
+      </div>
+      <div class="button">
+        <button class="btn" onclick="submit()">Sumbit</button>
+        <button class="btn" onclick="gotoIndex() ">Return to main page</button>
+      </div>
+    </div>
+  </body>
+</html>

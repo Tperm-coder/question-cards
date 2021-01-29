@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scores">
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="actual-score">score : <span id="score">0</span></div>
+      </div>
+      <div class="gap"></div>
+      <div class="trails">
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="actual-trails">tries : <span id="tries">3</span></div>
+      </div>
+      <div class="gap"></div>
+      <div id="questionsContainer" class="questions">
+        <div id="question" class="actual-question">
+          which of those is not a prime number ?
+        </div>
+
+        <div class="choices">
+          <input id="choice1" type="radio" name="choice" />
+          <label id="label1">1</label>
+        </div>
+
+        <div class="choices">
+          <input id="choice2" type="radio" name="choice" />
+          <label id="label2">5</label>
+        </div>
+
+        <div class="choices">
+          <input id="choice3" type="radio" name="choice" />
+          <label id="label3">7</label>
+        </div>
+        <div class="feedback">
+          <div class="result">your answer is <span id="result"></span></div>
+          <div class="gap"></div>
+          <div class="button">
+            <button class="btn" id="btnSN" onclick="checkAnswer()">
+              sumbit
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="tests">
+        <div class="gap"></div>
+        <div onclick="cppTest()" class="testCase">CPP test</div>
+      </div>
+      <div class="buttons">
+        <button class="btn" onclick="gotoAddQuestion()">add question</button>
+        <button class="btn" onclick="clearo()">clear</button>
+      </div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+  </body>
+  <script src="logic.js"></script>
+</html>
