@@ -3,10 +3,15 @@ var counterv = 0;
 var scoreCounter = 0;
 var triesCounter = 3;
 var x = localStorage.getItem("questions");
+if (x == "") {
+  x = null;
+}
 
 function getQuestions() {
-  if (x == "") {
+  if (x === null) {
+    return true;
   } else {
+    console.log("questions  was removed");
     questions = [];
   }
   x = x.split(",");
