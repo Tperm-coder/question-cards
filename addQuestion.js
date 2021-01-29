@@ -5,6 +5,8 @@ function gotoIndex() {
 }
 
 function submit() {
+  x = "";
+  c = localStorage.getItem("questions");
   x = x + document.getElementById("question").value + ",";
   x = x + document.getElementById("choice1").value + ",";
   x = x + document.getElementById("choice2").value + ",";
